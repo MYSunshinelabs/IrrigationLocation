@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_layout">10dp</dimen>
+    <dimen name="padding_text">10dp</dimen>
+    <dimen name="edittext_height">40dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fragment_margin">40dp</dimen>
+    <dimen name="margin_top">10dp</dimen>
+    <dimen name="margin_switch">20dp</dimen>
+    <dimen name="edittext_new_height">30dp</dimen>
+    <dimen name="customtextsize">18sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="paddingSmallVery">2dp</dimen>
+    <dimen name="paddingSmall">4dp</dimen>
+    <dimen name="paddingMeduim">8dp</dimen>
+    <dimen name="paddingMeduimLarge">12dp</dimen>
+    <dimen name="paddingLarge">20dp</dimen>
+    <dimen name="paddingLargeVery">30dp</dimen>
+
+
+    <dimen name="marginSmallVery">2dp</dimen>
+    <dimen name="marginSmall">4dp</dimen>
+    <dimen name="marginMeduim">8dp</dimen>
+    <dimen name="marginMeduimLarge">12dp</dimen>
+    <dimen name="marginLarge">20dp</dimen>
+    <dimen name="marginLargeVery">30dp</dimen>
+    <dimen name="marginGroupLeft">40dp</dimen>
+
+    <dimen name="textSizeSmall">12sp</dimen>
+    <dimen name="textSizePrimary">18sp</dimen>
+    <dimen name="textSizeSecondary">22sp</dimen>
+    <dimen name="textSizeLarg">30sp</dimen>
+    <dimen name="textSizeLargVery">40sp</dimen>
+
+    <dimen name="sizeOFFON">40dp</dimen>
+    <dimen name="sizeScheduleInd">15dp</dimen>
+    <dimen name="sizeMainScrIndi">30dp</dimen>
+    <dimen name="sizeRainIndi">12dp</dimen>
+
+
+</resources>

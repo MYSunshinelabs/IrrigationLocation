@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/marginMeduim"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_group_adv_mode"
+            android:padding="@dimen/paddingMeduim"
+            >
+
+            <com.irrigation.wifilocation.customview.CustomEditTextView
+                style="@style/AppEditTextAdv"
+                android:id="@+id/edtSSID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="SSID"
+                android:text="@{wifi.ssid}"
+                />
+
+            <com.irrigation.wifilocation.customview.CustomEditTextView
+                style="@style/AppEditTextAdv"
+                android:id="@+id/edtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:text="@{wifi.password}"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.irrigation.wifilocation.customview.CustomEditTextView
+                        style="@style/AppEditTextAdv"
+                        android:id="@+id/edtLatitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Latitude"
+                        android:text="@{wifi.latitude}"
+                        />
+                    <com.irrigation.wifilocation.customview.CustomEditTextView
+                        style="@style/AppEditTextAdv"
+                        android:id="@+id/edtLogtitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Longtitude"
+                        android:text="@{wifi.longtitude}"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgCurrentLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_mylocation"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/marginMeduim"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imgRemoveWifiLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_delete"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/marginMeduim"
+            android:layout_marginRight="@dimen/marginMeduim"
+            />
+
+    </RelativeLayout>

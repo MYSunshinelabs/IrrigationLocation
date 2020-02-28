@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/paddingMeduim"
+        android:background="@drawable/bg_valve_adv_mode">
+
+        <Button
+            android:id="@+id/btnAuto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_auto_mode"
+            android:text="AUTO"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/btnHotSpotRoom"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/btnHotSpotRoom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hotspot \n Roam"
+            app:layout_constraintLeft_toRightOf="@id/btnAuto"
+            app:layout_constraintRight_toLeftOf="@id/btnCrud"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="@dimen/marginMeduim"
+            android:layout_marginRight="@dimen/marginMeduim"
+            android:background="@drawable/background_auto_mode"
+            />
+        <Button
+            android:id="@+id/btnCrud"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Crud"
+            android:background="@drawable/bg_btn"
+            app:layout_constraintLeft_toRightOf="@id/btnHotSpotRoom"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+        <Button
+            android:layout_marginTop="@dimen/marginMeduim"
+            android:id="@+id/btnHotSpot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hot \n Spot"
+            android:background="@drawable/bg_time_picker_time"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/btnSSID1"
+            app:layout_constraintTop_toBottomOf="@id/btnAuto"
+            />
+        <Button
+            android:id="@+id/btnSSID1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Loc1 SSID"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toRightOf="@id/btnHotSpot"
+            app:layout_constraintRight_toLeftOf="@id/btnSSID2"
+            app:layout_constraintTop_toTopOf="@id/btnHotSpot"
+            android:layout_marginLeft="@dimen/marginMeduim"
+            android:layout_marginRight="@dimen/marginMeduim"
+            android:background="@drawable/bg_time_picker_time"
+            />
+
+        <Button
+            android:id="@+id/btnSSID2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Loc2 SSID"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toRightOf="@id/btnSSID1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btnHotSpot"
+            android:background="@drawable/bg_time_picker_time"
+            />
+
+        <Button
+            android:id="@+id/btnSSID3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Loc3 SSID"
+            android:visibility="invisible"
+            android:layout_marginTop="@dimen/marginMeduim"
+            android:background="@drawable/bg_time_picker_time"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/btnSSID4"
+            app:layout_constraintTop_toBottomOf="@id/btnHotSpot"
+            />
+
+        <Button
+            android:id="@+id/btnSSID4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Loc4 SSID"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toRightOf="@id/btnSSID3"
+            app:layout_constraintRight_toLeftOf="@id/btnSSID5"
+            app:layout_constraintTop_toTopOf="@id/btnSSID3"
+            android:layout_marginLeft="@dimen/marginMeduim"
+            android:layout_marginRight="@dimen/marginMeduim"
+            android:background="@drawable/bg_time_picker_time"
+            />
+
+        <Button
+            android:id="@+id/btnSSID5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Loc5 SSID"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toRightOf="@id/btnSSID4"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btnSSID3"
+            android:background="@drawable/bg_time_picker_time"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

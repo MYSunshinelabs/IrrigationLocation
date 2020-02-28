@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_valve_adv_mode"
+    android:padding="@dimen/paddingMeduim">
+
+    <StackView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/stack_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:loopViews="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnAuto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_auto_mode"
+                android:text="AUTO"/>
+            <Button
+                android:id="@+id/btnHotSpotRoom"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Hotspot Roam"
+                android:layout_marginLeft="@dimen/marginMeduim"
+                android:layout_marginRight="@dimen/marginMeduim"
+                android:background="@drawable/background_auto_mode"
+                />
+            <Button
+                android:id="@+id/btnCrud"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Crud"
+                android:background="@drawable/bg_btn"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginMeduim"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnHotSpot"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Hot Spot"
+                android:background="@drawable/bg_time_picker_time"
+                />
+            <Button
+                android:id="@+id/btnSSID1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Loc1 SSID"
+                android:visibility="visible"
+                android:layout_marginLeft="@dimen/marginMeduim"
+                android:layout_marginRight="@dimen/marginMeduim"
+                android:background="@drawable/bg_time_picker_time"
+                />
+
+            <Button
+                android:id="@+id/btnSSID2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Loc2 SSID"
+                android:visibility="visible"
+                android:background="@drawable/bg_time_picker_time"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginMeduim"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnSSID3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Loc3 SSID"
+                android:visibility="visible"
+                android:background="@drawable/bg_time_picker_time"
+                />
+
+            <Button
+                android:id="@+id/btnSSID4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Loc4 SSID"
+                android:visibility="visible"
+                android:layout_marginLeft="@dimen/marginMeduim"
+                android:layout_marginRight="@dimen/marginMeduim"
+                android:background="@drawable/bg_time_picker_time"
+                />
+
+            <Button
+                android:id="@+id/btnSSID5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Loc5 SSID"
+                android:visibility="visible"
+                android:background="@drawable/bg_time_picker_time"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

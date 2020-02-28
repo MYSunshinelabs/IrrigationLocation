@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_valve_adv_mode"
+    android:padding="@dimen/paddingMeduim">
+
+    <StackView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/stack_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:loopViews="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/paddingSmall"
+            android:background="@drawable/bg_border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextSecondary"
+                android:textStyle="bold"
+                android:text="WIFI"/>
+            <TextView
+                android:id="@+id/radioWifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radio_off"
+                android:layout_marginLeft="@dimen/marginMeduimLarge"
+                android:checked="true"
+                />
+
+            <TextView
+                android:id="@+id/radioHotspot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_radio_off"
+                android:layout_marginLeft="@dimen/marginMeduimLarge"
+                />
+
+            <TextView
+                android:id="@+id/txtSSID"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorTextSecondary"
+                android:textStyle="bold"
+                android:text="SSID"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/marginMeduim"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:visibility="visible"
+                android:background="@drawable/bg_time_picker_time"
+                />
+
+            <Button
+                android:id="@+id/btnOffice1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Office 1"
+                android:visibility="visible"
+                android:layout_marginLeft="@dimen/marginMeduim"
+                android:layout_marginRight="@dimen/marginMeduim"
+                android:background="@drawable/bg_time_picker_time"
+                />
+
+            <Button
+                android:id="@+id/btnOffice2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Office 2"
+                android:layout_marginRight="@dimen/marginMeduim"
+                android:visibility="visible"
+                android:background="@drawable/bg_time_picker_time"
+                />
+
+            <Button
+                android:id="@+id/btnHotSpot"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Hot spot"
+                android:visibility="gone"
+                android:background="@drawable/bg_time_picker_time"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/marginMeduim"
+            >
+            <Button
+                android:id="@+id/btnAuto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_time_picker_time"
+                android:text="OFF"/>
+            <Button
+                android:id="@+id/btnHotSpotRoom"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Hs Roam"
+                android:layout_marginLeft="@dimen/marginMeduim"
+                android:layout_marginRight="@dimen/marginMeduim"
+                android:background="@drawable/bg_time_picker_time"
+                />
+            <Button
+                android:id="@+id/btnCrud"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/marginMeduim"
+                android:text="Crud"
+                android:background="@drawable/background_manual_yellow"
+                />
+
+            <Button
+                android:id="@+id/btnConfig"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Config"
+                android:background="@drawable/background_manual_yellow"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/marginMeduim"
+            android:gravity="center_vertical"
+            android:padding="@dimen/paddingMeduim"
+            android:background="@drawable/bg_border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextSecondary"
+                android:textStyle="bold"
+                android:text="GPS"/>
+            <TextView
+                android:id="@+id/radioGps"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/bg_radio_off"
+                android:layout_marginLeft="@dimen/marginMeduimLarge"
+                android:checked="true"
+                />
+
+            <TextView
+                android:id="@+id/txtNoSatellites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginLeft="@dimen/marginMeduimLarge"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtLatLong"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginLeft="@dimen/marginMeduimLarge"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/radioHotspotEnable"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/bg_radio_off"
+                android:layout_marginLeft="@dimen/marginMeduimLarge"
+                android:layout_marginRight="@dimen/marginMeduimLarge"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

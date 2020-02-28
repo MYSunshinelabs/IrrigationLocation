@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/backgroundAutoMode" />
+    <stroke
+        android:width="0.5dip"
+        android:color="@color/strokeBlack" />
+    <size
+        android:width="@dimen/sizeMainScrIndi"
+        android:height="@dimen/sizeMainScrIndi"/>
+</shape>

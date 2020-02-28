@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data >
+        <variable
+            name="wifi"
+            type="com.irrigation.wifilocation.db.schema.Wifi"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginMeduim"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_group_adv_mode"
+            android:padding="@dimen/paddingMeduim"
+            >
+
+            <com.irrigation.wifilocation.customview.CustomEditTextView
+                style="@style/AppEditTextAdv"
+                android:id="@+id/edtSSID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="SSID"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/marginMeduimLarge"
+                android:text="@{wifi.ssid}"
+                />
+
+            <com.irrigation.wifilocation.customview.CustomEditTextView
+                style="@style/AppEditTextAdv"
+                android:id="@+id/edtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:maxLines="1"
+                android:text="@{wifi.password}"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.irrigation.wifilocation.customview.CustomEditTextView
+                        style="@style/AppEditTextAdv"
+                        android:id="@+id/edtLatitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Latitude"
+                        android:text="@{wifi.latitude}"
+                        android:inputType="numberDecimal"
+                        />
+                    <com.irrigation.wifilocation.customview.CustomEditTextView
+                        style="@style/AppEditTextAdv"
+                        android:id="@+id/edtLogtitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Longtitude"
+                        android:inputType="numberDecimal"
+                        android:text="@{wifi.longtitude}"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgCurrentLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_mylocation"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/marginMeduim"
+                    android:padding="@dimen/marginMeduim"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgRemoveWifiLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_delete"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/marginMeduim"
+            />
+
+    </RelativeLayout>
+</layout>

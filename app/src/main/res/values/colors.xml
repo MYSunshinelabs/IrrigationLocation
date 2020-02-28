@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="topbgcolor">#094316</color>
+
+    <color name="colorStatusBarNormal">#094316</color>
+    <color name="colorStatusBarAdvMode">#ffb000</color>
+
+    <color name="textcolor">#094316</color>
+    <color name="textColorGray">#6E6E6E</color>
+    <color name="headertextcolor">#B0FFB5</color>
+    <color name="waterbg">#629666</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextSecondary">#000000</color>
+    <color name="configurationtextbg">#ADE1B0</color>
+    <color name="backgroundText">#629666</color>
+    <color name="backgroundProgressBar">#4D000000</color>
+    <color name="backgroundDailog">#B0FFB5</color>
+
+
+    <color name="backgroundGray">#d9d9d9</color>
+    <color name="backgroundGreen">#92d050</color>
+    <color name="backgroundScreenAdvMode">#ffcc66</color>
+    <color name="backgroundMainScreen">#ffBD93</color>
+    <color name="backgroundGroupAdvMode">#ffc000</color>
+    <color name="backgroundValveAdvMode">#ffdb93</color>
+    <color name="backgroundGroupVolumeDisable">#D9D9D9</color>
+    <color name="backgroundManualMode">#FF0000</color>
+    <color name="backgroundAutoMode">#92d050</color>
+    <color name="strokeBlack">#2F528F</color>
+
+    <color name="colorLightOrange">#FF7F00</color>
+    <color name="colorDisableLayer">#8CFFFFFF</color>
+
+
+</resources>

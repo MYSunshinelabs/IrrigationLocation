@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundScreenAdvMode"
+        android:padding="@dimen/paddingLarge"
+        android:orientation="vertical">
+        <com.irrigation.wifilocation.customview.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_gps_update"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextSecondary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/marginLarge">
+
+            <com.irrigation.wifilocation.customview.CustomTextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="With in Geofence"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/textSizePrimary"
+                />
+            <EditText
+                android:id="@+id/edtInGeofence"
+                style="@style/AppEditText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="number"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/marginMeduim">
+
+            <com.irrigation.wifilocation.customview.CustomTextViewLight
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="OutSide Geofence"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/textSizePrimary"
+                />
+            <EditText
+                style="@style/AppEditText"
+                android:id="@+id/edtOutGeofence"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="number"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/marginMeduim">
+
+            <com.irrigation.wifilocation.customview.CustomTextViewLight
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Geofence Radius (Mtr)"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/textSizePrimary"
+                />
+            <EditText
+                style="@style/AppEditText"
+                android:id="@+id/edtGeofenceRadius"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="number"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/marginLarge">
+
+            <com.irrigation.wifilocation.customview.CustomTextViewBold
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Auto Hot Spot"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/textSizePrimary"
+                />
+
+            <CheckBox
+                android:id="@+id/cbAutoHotSpot"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                />
+
+        </LinearLayout>
+
+        <com.irrigation.wifilocation.customview.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tracking Mode"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="@dimen/textSizePrimary"
+            android:layout_marginTop="@dimen/marginLarge"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/marginMeduim">
+
+            <com.irrigation.wifilocation.customview.CustomTextViewLight
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Enable"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/textSizePrimary"
+                />
+
+            <CheckBox
+                android:id="@+id/cbTrackingMode"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/marginMeduim">
+
+            <com.irrigation.wifilocation.customview.CustomTextViewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Url"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/textSizePrimary"
+                android:layout_marginRight="@dimen/marginLargeVery"
+                />
+
+
+            <EditText
+                style="@style/AppEditText"
+                android:id="@+id/edtTrackingUrl"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="textUri"
+                android:gravity="left"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/marginMeduim">
+
+            <com.irrigation.wifilocation.customview.CustomTextViewLight
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Port"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/textSizePrimary"
+                />
+
+
+            <EditText
+                style="@style/AppEditText"
+                android:id="@+id/edtTrackingPort"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="number"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/marginMeduim">
+
+            <com.irrigation.wifilocation.customview.CustomTextViewLight
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Period (sec)"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/textSizePrimary"
+                />
+
+
+            <EditText
+                style="@style/AppEditText"
+                android:id="@+id/edtTrackingPeriod"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="number"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/marginLarge">
+
+            <com.irrigation.wifilocation.customview.CustomTextViewBold
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Timeout (min)"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="@dimen/textSizePrimary"
+                />
+
+
+            <EditText
+                style="@style/AppEditText"
+                android:id="@+id/edtTimeOut"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:inputType="number"
+                />
+
+        </LinearLayout>
+        <com.irrigation.wifilocation.customview.CustomTextViewLight
+            android:id="@+id/txtVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_marginTop="@dimen/marginLarge"
+            android:textSize="@dimen/textSizeSmall"
+            />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
